@@ -8,7 +8,7 @@ $(function () {
     if(window.location.hash === '' || window.location.hash.indexOf('access_token=') < 0)
     {
         redirect_uri = window.location.href;
-        auth_url = 'https://api.instagram.com/oauth/authorize/?client_id='+CLIENT_ID+ '&redirect_uri='+ redirect_uri +'&response_type=token';
+        auth_url = 'https://api.instagram.com/oauth/authorize/?client_id='+CLIENT_ID+ '&redirect_uri='+ redirect_uri +'&scope=public_content&response_type=token';
         window.location.replace(auth_url);
     }
     
